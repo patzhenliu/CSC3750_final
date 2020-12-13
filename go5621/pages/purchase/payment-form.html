@@ -1,1 +1,128 @@
-payment form page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mahogany Clothes</title>
+
+    <link rel="icon" href="../../logo.ico">
+    <link rel="stylesheet" media="screen" href="../../stylesheets/style.css">
+    <link rel="stylesheet" media="screen" href="../../stylesheets/shopping-cart.css">
+    <link rel="stylesheet" media="screen" href="../../stylesheets/payment-form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patricia Liu">
+    <meta name="description" content="Online store for selling clothes">
+</head>
+
+<body id="mahogany-clothes-cart flex-container">
+    <div class="page-wrapper">
+        <div class="sticky">
+            <!-- Header -->
+            <section class="header">
+                <header role="banner">
+                    <a href="../../index.html"><img class="center" id="header-title"
+                            src="../../assets/header/header-title.png"></a>
+                </header>
+            </section>
+
+            <!-- Navigation -->
+            <section class="navigation">
+                <nav>
+                    <div class="menu">
+                        <span class="nav-item"><a href="shopping-cart.html">&#60; Back to Cart</a></span>
+                    </div>
+            </section>
+        </div>
+
+        <div class="main">
+            <!-- Payment Form Section -->
+            <div class="content payment-form">
+                <div class="payment-form-header">
+                    <h3>Check Out</h3>
+                    <p id="caption">
+                        Enter your information to complete your purchase
+                    </p>
+                </div>
+                <form action="thank-you.html" method="POST">
+                    <!-- information section -->
+                    <div class="checkout-info">
+                        <div class="payment-section">
+                            <fieldset>
+                                <legend>Contact Information</legend>
+                                <ul>
+                                    <li>
+                                        <label for="info-name">Name:</label>
+                                        <input type="text" name="customername" id="info-name">
+                                    </li>
+                                    <li>
+                                        <label for="info-address">Address:</label>
+                                        <input type="text" name="address" id="info-address">
+                                    </li>
+                                    <li>
+                                        <label for="info-telephone">Telephone Number:</label>
+                                        <input type="tel" name="telephone" id="info-telephone">
+                                    </li>
+                                    <li>
+                                        <label for="info-email">Email:</label>
+                                        <input type="email" name="email" id="info-email">
+                                    </li>
+                                    <li>
+                                        <label for="info-instructions">Delivery instructions:</label><br>
+                                        <textarea name="instructions" maxlength="400" rows="4" cols="60"
+                                            id="info-instructions"
+                                            placeholder="Type your delivery instructions here..."></textarea>
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Billing Information</legend>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Shipping Information</legend>
+                            </fieldset>
+                        </div>
+
+                        <div class="cart-section">
+                            <fieldset>
+                                <legend>Items in Cart (4)</legend>
+                                <div class="content shopping-cart cart-section">
+                                    <!-- Products -->
+                                    <div class="shopping-cart-list">
+                                        <p class="product-name">Grey Trench Coat</p>
+                                        <p class="price center">59<small>.99</small></p>
+
+                                        <p class="product-name">Patterned Shirt Dress</p>
+                                        <p class="price center">74<small>.99</small></p>
+
+                                        <p class="product-name">Orange Denim Skirt</p>
+                                        <p class="price center">49<small>.99</small></p>
+
+                                        <p class="product-name">Saffron Cropped Top</p>
+                                        <p class="price center">39<small>.99</small></p>
+
+                                        <p class="horizontal-rule"></p>
+
+                                        <p class="product-name">Total</p>
+                                        <p class="price center">224<small>.96</small></p>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div id="buttons">
+                                <input class="button" type="submit" value="Submit Order">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
