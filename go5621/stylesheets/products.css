@@ -1,0 +1,14 @@
+.content {
+    margin: 0 15%;
+}
+.product-header {
+    margin: 0 15px;
+}
+#view-more {
+    margin-top: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+.product-list {
+    justify-content: left;
+}

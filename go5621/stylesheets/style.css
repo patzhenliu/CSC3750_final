@@ -66,6 +66,8 @@ abbr {
 	 color: #F7F1EC;
 	 padding: 5px 10px;
 	 border-radius: 6px;
+	 border: none;
+	 cursor: pointer;
  }
 
 /* specific divs */
@@ -150,7 +152,7 @@ nav div {
 	animation-iteration-count: infinite;
 	animation-duration: 10s;
 	animation-direction: alternate;
-	}
+}
 
 /* products */
 .product-header {
@@ -246,15 +248,15 @@ footer email {
 /* animation */
 @keyframes fade {
 	0% {
-		opacity:1;
+		opacity:0;
 	}
 	45% {
-	  opacity:1;
+	  opacity:0;
 	}
 	55% {
-	  opacity:0;
+	  opacity:1;
 	}
 	100% {
-	  opacity:0;
+	  opacity:1;
 	}
   }
