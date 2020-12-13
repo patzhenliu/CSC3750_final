@@ -1,0 +1,18 @@
+.main {
+    margin-top: 200px;
+}
+p, h1{
+    text-align: center;
+}
+#thank-you {
+    border-bottom: 1px solid #c9beb5;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.purchase-confirmed {
+    border: 1px solid #c9beb5;
+    border-radius: 25px;
+    width: 50%;
+    padding: 0 5%;
+    margin-bottom: 30px;
+}
