@@ -14,6 +14,9 @@ fieldset {
     margin: 10px;
     padding-bottom: 30px;
 }
+label {
+    cursor: pointer;
+}
 
 /* payment section */
 .payment-section {
@@ -46,18 +49,37 @@ input, label, textarea, select {
     display: flex;
     width: 84%;
 }
-.checkbox {
-    margin: 0 -21px 0 31px;
+.checkbox, .radio {
+    margin: 0 -15px 0 31px;
     float:left;
     display: block;
     width: auto !important;
+    cursor: pointer;
 }
-.checkbox-input {
+.checkbox-input, .radio-input {
     margin-bottom: 10px;
 }
 
 
 /* cart section */
+/* shipping options */
+.radio-input input{
+    margin-left: -23px;
+}
+.radio {
+    margin-top: 7px;
+}
+fieldset.shipping-options-fieldset {
+    padding-bottom: 30px !important;
+}
+.shipping-options-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.shipping-options-section label {
+    margin: 0;
+}
+/* review items */
 .cart-section {
     justify-content: right;
     flex: 30%;
