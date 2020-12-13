@@ -45,48 +45,117 @@
                         Enter your information to complete your purchase
                     </p>
                 </div>
-                <form action="thank-you.html" method="POST">
+                <form action="purchase-confirmed.html" method="POST">
                     <!-- information section -->
                     <div class="checkout-info">
                         <div class="payment-section">
-                            <fieldset>
+                            <fieldset class="contact-info">
                                 <legend>Contact Information</legend>
-                                <ul>
-                                    <li>
-                                        <label for="info-name">Name:</label>
-                                        <input type="text" name="customername" id="info-name">
-                                    </li>
-                                    <li>
-                                        <label for="info-address">Address:</label>
-                                        <input type="text" name="address" id="info-address">
-                                    </li>
-                                    <li>
-                                        <label for="info-telephone">Telephone Number:</label>
-                                        <input type="tel" name="telephone" id="info-telephone">
-                                    </li>
-                                    <li>
-                                        <label for="info-email">Email:</label>
-                                        <input type="email" name="email" id="info-email">
-                                    </li>
-                                    <li>
-                                        <label for="info-instructions">Delivery instructions:</label><br>
-                                        <textarea name="instructions" maxlength="400" rows="4" cols="60"
-                                            id="info-instructions"
-                                            placeholder="Type your delivery instructions here..."></textarea>
-                                    </li>
-                                </ul>
+
+                                <div><label for="info-email">Email</label></div>
+                                <div><input type="email" name="email" id="info-email" autocomplete="off"
+                                        placeholder="Ex. someone@example.com" required></div>
+
                             </fieldset>
 
-                            <fieldset>
-                                <legend>Billing Information</legend>
-                            </fieldset>
-
-                            <fieldset>
+                            <fieldset class="shipping-info">
                                 <legend>Shipping Information</legend>
+                                <div class="name">
+                                    <div>
+                                        <div><label for="first-name">First Name</label></div>
+                                        <div><input type="text" name="first-name" id="first-name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div><label for="last-name">Last Name</label></div>
+                                        <div><input type="text" name="last-name" id="last-name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <div><label for="address">Address</label></div>
+                                    <div><input type="text" name="address" id="address" autocomplete="off" required></div>
+
+                                    <div><label for="apt">Apartment, suite, etc. (optional)</label></div>
+                                    <div><input type="text" name="apt" id="apt" autocomplete="off"></div>
+
+                                    <div><label for="city">City</label></div>
+                                    <div><input type="text" name="city" id="city" autocomplete="off" required></div>
+                                </div>
+                                <label>Region</label>
+                                <div class="region">
+                                    <select id="country" name="country">
+                                        <option value="us">United States</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="mexico">Mexico</option>
+                                    </select>
+                                    <div><input type="text" name="state" id="state" autocomplete="off" placeholder="State" required></div>
+                                    <div><input type="text" name="zip code" id="zipcode" autocomplete="off" placeholder="Zip Code" required></div>
+                                </div>
+                                <div class="phone">
+                                    <div><label for="info-telephone">Telephone Number</label></div>
+                                    <div><input type="tel" name="telephone" id="info-telephone" autocomplete="off"
+                                            placeholder="Ex. (111)-111-1111" required></div>
+                                </div>
+                                <label for="info-instructions">Delivery instructions (optional)</label><br>
+                                <textarea name="instructions" maxlength="400" id="info-instructions"
+                                    placeholder="Type your delivery instructions here..."></textarea>
+                            </fieldset>
+
+                            <fieldset class="billing info">
+                                <legend>Billing Information</legend>
+                                <div class="checkbox-input">
+                                    <label><input class="checkbox" type="checkbox" name="same-as-shipping" value="same-as-shipping"> Billing address same as shipping</label>
+                                </div>
+                                <div class="name">
+                                    <div>
+                                        <div><label for="first-name">First Name</label></div>
+                                        <div><input type="text" name="first-name" id="first-name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div><label for="last-name">Last Name</label></div>
+                                        <div><input type="text" name="last-name" id="last-name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    <div><label for="address">Address</label></div>
+                                    <div><input type="text" name="address" id="address" autocomplete="off" required></div>
+
+                                    <div><label for="apt">Apartment, suite, etc. (optional)</label></div>
+                                    <div><input type="text" name="apt" id="apt" autocomplete="off"></div>
+
+                                    <div><label for="city">City</label></div>
+                                    <div><input type="text" name="city" id="city" autocomplete="off" required></div>
+                                </div>
+                                <label>Region</label>
+                                <div class="region">
+                                    <select id="country" name="country">
+                                        <option value="us">United States</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="mexico">Mexico</option>
+                                    </select>
+                                    <div><input type="text" name="state" id="state" autocomplete="off" placeholder="State" required></div>
+                                    <div><input type="text" name="zip code" id="zipcode" autocomplete="off" placeholder="Zip Code" required></div>
+                                </div>
+                                <div class="phone">
+                                    <div><label for="info-telephone">Telephone Number</label></div>
+                                    <div><input type="tel" name="telephone" id="info-telephone" autocomplete="off"
+                                            placeholder="Ex. (111)-111-1111" required></div>
+                                </div>
                             </fieldset>
                         </div>
 
                         <div class="cart-section">
+                            <fieldset>
+                                <legend>Shipping Options</legend>
+                                <div class="content shipping-options-section">
+                                    <div class="checkbox-input">
+                                    <label><input type="radio" name="same-as-shipping" value="same-as-shipping"> Billing address same as shipping</label>
+                                    </div>
+                                </div>
+                            </fieldset>
                             <fieldset>
                                 <legend>Items in Cart (4)</legend>
                                 <div class="content shopping-cart cart-section">
@@ -113,7 +182,7 @@
                                 </div>
                             </fieldset>
                             <div id="buttons">
-                                <input class="button" type="submit" value="Submit Order">
+                                <input class="link-button center button" type="submit" value="Place Order"></input>
                             </div>
                         </div>
                     </div>

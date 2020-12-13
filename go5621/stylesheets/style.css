@@ -5,7 +5,7 @@ html {
 	padding: 0;
 }
 body { 
-	font: 1em 'Comfortaa', cursive;;
+	font: 1em 'Comfortaa', cursive;
 	line-height: 1.88889;
 	color: #555753;
 	background-color: #F7F1EC;
@@ -209,6 +209,7 @@ footer {
 	color: #cfa99b;
 	background-color: #580808;
 	padding: 5px;
+	font-size: 0.8em;
 }
 footer .contact-info{
 	display: flex;
@@ -237,6 +238,9 @@ footer h4 {
 footer div {
 	display: flex;
 	margin-bottom: 5px;
+}
+footer email {
+	color: #d1b0a4;
 }
 
 /* animation */

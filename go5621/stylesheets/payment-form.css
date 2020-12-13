@@ -4,19 +4,60 @@
     margin-top: 140px;
     justify-content: center;
 }
-fieldset {
-    margin: 10px;
-}
 .content {
     border: none;
     margin: 20px;
     padding: 0;
     width: 70%;
 }
+fieldset {
+    margin: 10px;
+    padding-bottom: 30px;
+}
+
+/* payment section */
 .payment-section {
     justify-content: left;
     flex: 70%;
 }
+.payment-section input,
+.payment-section textarea,
+.payment-section select {
+    width: 80%;
+}
+.payment-section input {
+    height: 25px;
+}
+.payment-section textarea {
+    height: 90px;
+}
+.payment-section select {
+    height: 30px;
+}
+input, label, textarea, select {
+    margin-left: 32px;
+}
+/* shipping/billing */
+.name {
+    display: flex;
+    width: 70%;
+}
+.region {
+    display: flex;
+    width: 84%;
+}
+.checkbox {
+    margin: 0 -21px 0 31px;
+    float:left;
+    display: block;
+    width: auto !important;
+}
+.checkbox-input {
+    margin-bottom: 10px;
+}
+
+
+/* cart section */
 .cart-section {
     justify-content: right;
     flex: 30%;
@@ -49,7 +90,16 @@ fieldset {
     grid-column: 1/3;
     border-bottom: 1px solid rgb(124, 122, 122);
 }
+
+/* button */
 #buttons {
     display: flex;
     justify-content: center;
+}
+#buttons input {
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    font: 1em 'Comfortaa', cursive;
+    padding: 5px 10px;
 }
