@@ -30,3 +30,26 @@ td, th {
 tr:nth-child(even) {
   background-color: #e2ddd7;
 }
+
+/* responsive */
+@media screen and (max-width: 800px) {
+	a {
+    text-align: center;
+  }
+  .content {
+    margin: 0;
+  }
+  .chart-table {
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+	.main {
+		padding: 0;
+		justify-content: center;
+		margin-top: 0;
+  }
+  .chart-table {
+    font-size: 0.6em;
+  }
+}

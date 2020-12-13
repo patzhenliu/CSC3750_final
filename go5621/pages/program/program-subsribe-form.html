@@ -1,1 +1,118 @@
-subscribe page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mahogany Clothes</title>
+
+    <link rel="icon" href="../../logo.ico">
+    <link rel="stylesheet" media="screen" href="../../stylesheets/style.css">
+    <link rel="stylesheet" media="screen" href="../../stylesheets/program-subscribe-form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patricia Liu">
+    <meta name="description" content="Online store for selling clothes">
+</head>
+
+<body id="mahogany-clothes-cart flex-container">
+    <div class="page-wrapper">
+        <div class="sticky">
+            <!-- Header -->
+            <section class="header">
+                <header role="banner">
+                    <a href="../../index.html"><img class="center" id="header-title"
+                            src="../../assets/header/header-title.png"></a>
+                </header>
+            </section>
+
+            <!-- Navigation -->
+            <section class="navigation">
+                <nav>
+                    <div class="menu">
+                        <span class="nav-item"><a href="../../index.html">Home</a></span>
+                        <span class="nav-item"><a href="../products/products.html">Products</a></span>
+                        <span class="nav-item"><a href="../program/program.html">Subscription Box</a></span>
+                    </div>
+                    <div class="cart">
+                        <span class="nav-item">
+                            <a href="../purchase/shopping-cart.html">Cart <span
+                                    class="material-icons inline-icon">shopping_cart</span></a>
+                        </span>
+                    </div>
+                </nav>
+            </section>
+        </div>
+
+        <div class="main">
+            <!-- Subscription Box Program Section -->
+            <div class="content program">
+                <h3 class="center">Mahogany Box Subscription</h3>
+                <form action="../purchase/shopping-cart.html" method="POST"> 
+                    <div class="options">
+                        <label>
+                            <div class="subscription-option">
+                                <img class="center" src="../../assets/program/sub-box-2.jpg" alt="clothes">
+                                <p class="option-title">1-month</p>
+                                <p class="price">20</p>
+                            </div>
+                            <input class="center" name="sub-option" type="radio" required>
+                        </label>
+                        <label>
+                            <div class="subscription-option">
+                                <img class="center" src="../../assets/program/sub-box-3.jpg" alt="clothes">
+                                <p class="option-title">3-months</p>
+                                <p class="price">55</p>
+                            </div>
+                            <input class="center" name="sub-option" type="radio">
+                        </label>
+                        <label>
+                            <div class="subscription-option">
+                                <img class="center" src="../../assets/program/sub-box-4.jpg" alt="clothes">
+                                <p class="option-title">12-month</p>
+                                <p class="price">200</p>
+                            </div>
+                            <input class="center" name="sub-option" type="radio">
+                        </label>        
+                    </div>
+                    <input class="link-button center button" type="submit" value="Add subscription to cart"></input>
+                </form>
+                </div>
+        </div>
+
+        <!-- Contact Information and Social Media -->
+        <section class="information">
+            <footer>
+                <div class="contact-info">
+                    <div class="location">
+                        <h4>Location</h4>
+                        <span>1130 5th Ave</span>
+                        <span>New York, NY 15422</span>
+                    </div>
+                    <div class="hours">
+                        <h4>Hours</h4>
+                        <span>Monday-Friday <time datetime="08:00">8am</time>-<time datetime="22:00">10pm</time></span>
+                        <span>Saturday <time datetime="08:00">8am</time>-<time datetime="20:00">8pm</time></span>
+                        <span>Sunday <time datetime="10:00">10am</time>-<time datetime="20:00">8pm</time></span>
+                    </div>
+                    <div class="contact">
+                        <h4>Contact</h4>
+                        <span>(917)-213-7466</span>
+                        <a href="mailto:service@mahogany.com">
+                            <email>service@mahogany.com</email>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                    <a href="https://wordpress.com/" target="_blank">Blog</a>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>

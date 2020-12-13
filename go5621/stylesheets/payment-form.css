@@ -123,3 +123,36 @@ fieldset.shipping-options-fieldset {
     font: 1em 'Comfortaa', cursive;
     padding: 5px 10px;
 }
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+	.main {
+		padding: 0;
+    }
+    .checkout-info {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+	.main {
+		padding: 0;
+    }
+    .checkout-info, .name, .region {
+        flex-direction: column;
+    }
+    .region input, .region select{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+	.main {
+        padding: 0;
+        margin-top: 0;
+    }
+    nav{
+        height: auto;
+    }
+    .payment-form-header {
+        text-align: center;
+    }
+}
