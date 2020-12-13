@@ -46,7 +46,7 @@
 
         <div class="main">
             <!-- Products Section -->
-            <div class="content products">
+            <div class="content products detail">
                 <div class="product-header">
                     <h2>Product Detail</h2>
                 </div>
@@ -68,11 +68,20 @@
                 </div>
                 <div class="product-purchase">
                     <form action="../purchase/shopping-cart.html" method="POST">
-                        <input class="number-input" type="number" min="1" max="5"></input>
-                        <input class="link-button center button" type="submit" value="Add to cart"></input>
+                        <div id="form-size">
+                            <label><input type="radio" name="size" value="small" required> Small</label>
+                            <label><input type="radio" name="size" value="medium"> Medium</label>
+                            <label><input type="radio" name="size" value="large"> Large</label>
+                        </div>
+                        <div id="form-quantity">
+                            <label for="quantity">Qty</label>
+                            <input id="quantity" class="number-input" type="number" min="1" max="99" value="1"></input>
+                            <input class="link-button center button" type="submit" value="Add to cart"></input>
+                        </div>
                     </form>
                 </div>
                 <div class="product-additional">
+                    <a id="sizing-chart-link" href="sizing-chart.html" ><small>Sizing chart</small></a>
                     <p>Free international shipping for orders over $40</p>
                     <p>Secured Payment</p>
                     <p>Return within 15 days</p>

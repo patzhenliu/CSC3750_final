@@ -120,8 +120,6 @@ fieldset.shipping-options-fieldset {
 }
 #buttons input {
     margin: 0;
-    border: none;
-    cursor: pointer;
     font: 1em 'Comfortaa', cursive;
     padding: 5px 10px;
 }
