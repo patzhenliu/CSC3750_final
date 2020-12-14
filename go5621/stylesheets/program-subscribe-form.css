@@ -27,13 +27,22 @@ p, h1{
 .subscription-option img {
     width: 100%;
     border-radius: 50%;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px dashed #c9beb5;
 }
 .link-button {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     height: 40px;
     padding: 5px 10px;
     font-size: 1em;
+}
+.subscription-option {
+    padding-bottom: 10px;
+}
+.subscription-option, input {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
